@@ -26,7 +26,7 @@ bool CheckBox(int arr[9][9], int n, int a, int b)
     int jEnd = jStart+3;
 
     for(; iStart<iEnd ; iStart++ )
-        for(; jStart<jEnd ; jStart++)
+        for(jStart = 3*b; jStart<jEnd ; jStart++)
             if( arr[iStart][jStart]==n)
                 return false;
 
